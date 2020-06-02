@@ -19,6 +19,13 @@ You can find more information about the model and results there as well.
 
 GPU strongly recommended to avoid very long training times.
 
+### Option 0: Direct install (simcloud)
+```
+conda activate pytorch
+conda install -c conda-forge libsndfile -y
+conda install ffmpeg -y
+```
+
 ### Option 1: Direct install (recommended)
 
 System requirements:
