@@ -50,6 +50,7 @@ source waveunet-env/bin/activate
 Install all the required packages listed in the ``requirements.txt``:
 
 ```
+pip install --upgrade pip
 pip3 install -r requirements.txt
 ```
 
@@ -100,6 +101,11 @@ We provide the default model in a pre-trained form as download so you can separa
 Download our pretrained model [here](https://www.dropbox.com/s/r374hce896g4xlj/models.7z?dl=1).
 Extract the archive into the ``checkpoints`` subfolder in this repository, so that you have one subfolder for each model (e.g. ``REPO/checkpoints/waveunet``)
 
+```
+wget -O models.7z https://www.dropbox.com/s/r374hce896g4xlj/models.7z?dl=1
+sudo apt-get install -y dtrx
+dtrx models.7z
+```
 ## Run pretrained model
 
 To apply our pretrained model to any of your own songs, simply point to its audio file path using the ``input_path`` parameter:
