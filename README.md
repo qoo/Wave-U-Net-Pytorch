@@ -107,6 +107,10 @@ Extract the archive into the ``checkpoints`` subfolder in this repository, so th
 wget -O models.7z https://www.dropbox.com/s/r374hce896g4xlj/models.7z?dl=1
 sudo apt-get install -y dtrx
 dtrx models.7z
+
+sudo apt-get install p7zip
+7za e models.7z
+
 ```
 ## Run pretrained model
 
